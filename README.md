@@ -108,7 +108,8 @@ Tested on RTX 3050, batch size = 1
 * CUDA
 ## 📸 Demo
 <img width="767" height="767" alt="image" src="https://github.com/user-attachments/assets/3a5e92fa-fb3d-4267-84b3-d989930c4927" />
-![result](https://github.com/user-attachments/assets/ac4f4153-35ef-45e5-98de-060cb08499f1)
+<img width="825" height="828" alt="image" src="https://github.com/user-attachments/assets/a8b34bcb-8688-4adb-91ca-791892dddbcd" />
+
 
 
 
