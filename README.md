@@ -90,11 +90,11 @@ Tested on RTX 3050, batch size = 1
 
 ```
 .
-├── export_onnx.py
-├── build_engine.py
-├── infer_trt.py
+├── onnx.py
+├── engine.py
+├── model.py
 ├── models/
-└── utils/
+└── 
 ```
 
 ---
