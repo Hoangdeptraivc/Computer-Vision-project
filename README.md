@@ -1,1 +1,93 @@
 # Computer-Vision-project
+# YOLOv8-TensorRT
+
+# 🚀 Real-time Object Detection with TensorRT
+
+High-performance Computer Vision system using **YOLOv8 + ONNX + TensorRT** for low-latency inference.
+
+---
+
+## 📌 Overview
+
+This project builds an end-to-end inference pipeline:
+
+```
+PyTorch (.pt) → ONNX → TensorRT Engine → Real-time Inference
+```
+
+* Optimized for **low latency**
+* Supports **GPU acceleration (CUDA)**
+* Designed for **real-time applications**
+
+---
+
+## ⚙️ Setup
+
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
+pip install ultralytics
+```
+
+### 2. Requirements
+
+* CUDA >= 11.x
+* TensorRT >= 8.x
+
+---
+
+## 🔧 Usage
+
+### 1. Export ONNX
+
+```bash
+python onnx.py --weights yolov8s.pt
+```
+
+---
+
+### 2. build TensorRT Engine
+
+```bash
+python engine.py --weights yolov8s.onnx
+```
+
+---
+
+### 3. Run Inference
+
+```bash
+python infer_trt.py --engine yolov8s.engine --source data/
+```
+
+---
+
+## ⚡ Performance
+
+* Low-latency inference (~ms level)
+* GPU-accelerated using TensorRT
+* Optimized with FP16
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── export_onnx.py
+├── build_engine.py
+├── infer_trt.py
+├── models/
+└── utils/
+```
+
+---
+
+## 🧠 Tech Stack
+
+* Python
+* YOLOv8
+* ONNX
+* TensorRT
+* CUDA
